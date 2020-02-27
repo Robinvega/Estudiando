@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-
 from odoo import models, fields
-
 
 class academia(models.Model):
      _name = 'academia.usuarios'
@@ -12,12 +10,12 @@ class academia(models.Model):
     apellido2 = fields.Integer()
     matricula = fields.Float(compute="_value_pc", store=True)
     description = fields.Text()
-    state = fields.Selection(selection=[
-        ('draft', 'New'),
-        ('approve', 'Approved'),
-        ('confirm', 'Confirmed'),
-        ('cancel', 'Cancelled'),
-        ('done', 'Done'),], string='State', default='draft')
+#    state = fields.Selection(selection=[
+#        ('draft', 'New'),
+#        ('approve', 'Approved'),
+#        ('confirm', 'Confirmed'),
+#        ('cancel', 'Cancelled'),
+#        ('done', 'Done'),], string='State', default='draft')
         
 #        location_id = fields.Many2one(comodel_name='res.partner', ondelete='restrict',)     
         
